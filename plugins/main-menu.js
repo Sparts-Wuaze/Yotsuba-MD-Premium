@@ -123,14 +123,14 @@ let handler = async (m, { conn }) => {
 
   // construir texto según el template proporcionado
   let txt = `
-¡𝐇𝐨𝐥𝐚! Soy *${nombreBot}* *${(conn.user.jid == global.conn.user.jid ? '(OficialBot)' : '(Sub-Bot)')}*
+Hello! i'm *${nombreBot}* *${(conn.user.jid == global.conn.user.jid ? '(OficialBot)' : '(Sub-Bot)')}*
 
 > ꒰⌢ ʚ˚₊‧ ✎ ꒱ INFO:
-- ${nombreBot} es un bot privado, el cual el bot principal no se unirá a tus grupos. Si quieres tener el bot en tu grupo tienes que ser Sub-Bot con *(#code)*
+- *${nombreBot}* It's a private bot, which means the main bot won't join your groups. If you want to have the bot in your group, you need to be a Sub-Bot with (#code).
 > ꒰⌢ ʚ˚₊‧ ✎ ꒱ ❐ ʚ˚₊‧ʚ˚₊‧ʚ˚
 
 *╭╼𝅄꒰𑁍⃪࣭۪ٜ݊݊݊݊݊໑ٜ࣪ ꒱ 𐔌 BOT - INFO 𐦯*
-*|✎ Creador:* 𓆩‌۫᷼ ִֶָღܾ݉͢ғ꯭ᴇ꯭፝ℓɪ꯭ͨא𓆪
+*|✎ Owner:* 𓆩‌۫᷼ ִֶָღܾ݉͢ғ꯭ᴇ꯭፝ℓɪ꯭ͨא𓆪
 *|✎ Users:* ${totalreg.toLocaleString()}
 *|✎ Uptime:* ${uptime}
 *|✎ Ping:* ${p}
@@ -147,12 +147,12 @@ let handler = async (m, { conn }) => {
 *╰─ׅ─ׅ┈─๋︩︪─☪︎︎︎̸⃘࣭ٜ࣪࣪࣪۬◌⃘۪֟፝֯۫۫︎⃪𐇽۫۬👑⃘⃪۪֟፝֯۫۫۫۬◌⃘࣭ٜ࣪࣪࣪۬☪︎︎︎︎̸─ׅ─ׅ┈─๋︩︪─╯*
 
 
-*➪ 𝗟𝗜𝗦𝗧𝗔*
-       *➪  𝗗𝗘*
-           *➪ 𝗖𝗢𝗠𝗔𝗡𝗗𝗢𝗦*
+*➪ 𝗖𝗢𝗠𝗠𝗔𝗡𝗗*
+     *➪ 𝗧𝗛𝗘*
+         *➪ 𝗟𝗜𝗦𝗧*
 
 
-*꒰⌢◌⃘࣭ٜ࣪࣪࣪۬☪︎︎︎︎̸ ✎ ꒱ 𐔌 HERRAMIENTAS 𐦯*
+*꒰⌢◌⃘࣭ٜ࣪࣪࣪۬☪︎︎︎︎̸ ✎ ꒱ 𐔌 𝗧𝗢𝗢𝗟𝗦 𐦯*
 > *𑁍⃪࣭۪ٜ݊݊݊݊݊໑ٜ࣪ ❏ #pinterest <texto>*
 > *𑁍⃪࣭۪ٜ݊݊݊݊݊໑ٜ࣪ ❏ #play <musica>*
 > *𑁍⃪࣭۪ٜ݊݊݊݊݊໑ٜ࣪ ❏ #catbox <imagen>*
@@ -204,7 +204,7 @@ let handler = async (m, { conn }) => {
 *╰─ׅ─ׅ┈─๋︩︪─☪︎︎︎̸⃘࣭ٜ࣪࣪࣪۬◌⃘۪֟፝֯۫۫︎⃪𐇽۫۬👑⃘⃪۪֟፝֯۫۫۫۬◌⃘࣭ٜ࣪࣪࣪۬☪︎︎︎︎̸─ׅ─ׅ┈─๋︩︪─╯*
 
 
-*꒰⌢◌⃘࣭ٜ࣪࣪࣪۬☪︎︎︎︎̸ ✎ ꒱ 𐔌 GESTIÓN 𐦯*
+*꒰⌢◌⃘࣭ٜ࣪࣪࣪۬☪︎︎︎︎̸ ✎ ꒱ 𐔌 𝗠𝗔𝗡𝗔𝗚𝗘𝗠𝗘𝗡𝗧 𐦯*
 > *𑁍⃪࣭۪ٜ݊݊݊݊݊໑ٜ࣪ ❏ #testwelcome
 > *𑁍⃪࣭۪ٜ݊݊݊݊݊໑ٜ࣪ ❏ #testbye
 > *𑁍⃪࣭۪ٜ݊݊݊݊݊໑ٜ࣪ ❏ #bye <on/off>*
@@ -216,7 +216,7 @@ let handler = async (m, { conn }) => {
 *╰─ׅ─ׅ┈─๋︩︪─☪︎︎︎̸⃘࣭ٜ࣪࣪࣪۬◌⃘۪֟፝֯۫۫︎⃪𐇽۫۬👑⃘⃪۪֟፝֯۫۫۫۬◌⃘࣭ٜ࣪࣪࣪۬☪︎︎︎︎̸─ׅ─ׅ┈─๋︩︪─╯*
 
 
-*꒰⌢◌⃘࣭ٜ࣪࣪࣪۬☪︎︎︎︎̸ ✎ ꒱ 𐔌 GRUPOS 𐦯*
+*꒰⌢◌⃘࣭ٜ࣪࣪࣪۬☪︎︎︎︎̸ ✎ ꒱ 𐔌 𝗚𝗥𝗢𝗨𝗣𝗦 𐦯*
 > *𑁍⃪࣭۪ٜ݊݊݊݊݊໑ٜ࣪ ❏ #demote*
 > *𑁍⃪࣭۪ٜ݊݊݊݊݊໑ٜ࣪ ❏ #promote*
 > *𑁍⃪࣭۪ٜ݊݊݊݊݊໑ٜ࣪ ❏ #delete*
